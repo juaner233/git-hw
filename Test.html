@@ -6,7 +6,8 @@
 
     <!--<script type="application/javascript" src="myforeach.js"></script>-->
     <!--<script type="application/javascript" src="mymap.js"></script>-->
-    <script type="application/javascript" src="myindexOf.js"></script>
+    <!--<script type="application/javascript" src="myindexOf.js"></script>-->
+    <script type="application/javascript" src="myevery.js"></script>
 </head>
 <body>
 <script>
@@ -26,7 +27,13 @@
 //    console.log(myarr)
 
 //  调用myindexOf找跟30相同的数组下标
-    console.log(array.myindexOf(30,"0"))
+//    console.log(array.myindexOf(30,"0"))
+
+//  调用myevery知道数组是否完全符合要求
+    var result = array.myevery(function (value,index,array) {
+        return value > 50
+    })
+    console.log(result)
 </script>
 </body>
 </html>
