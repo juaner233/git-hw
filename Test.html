@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="application/javascript" src="myforeach.js"></script>
+</head>
+<body>
+<script>
+    var array = [10, 20, 30, 40, 50]
+    var arr = 0
+
+    //调用 array中的值求和
+    array.myForEach(function(value,index,array){
+        arr += value
+    })
+    console.log(arr)
+
+
+
+</script>
+</body>
+</html>
