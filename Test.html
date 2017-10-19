@@ -5,7 +5,8 @@
     <title>Title</title>
 
     <!--<script type="application/javascript" src="myforeach.js"></script>-->
-    <script type="application/javascript" src="mymap.js"></script>
+    <!--<script type="application/javascript" src="mymap.js"></script>-->
+    <script type="application/javascript" src="myindexOf.js"></script>
 </head>
 <body>
 <script>
@@ -18,11 +19,14 @@
 //    })
 //    console.log(arr)
 
-    var myarr = array.mymap(function (value,index,array) {
-        return value*value
-    })
-    console.log(myarr)
+//    调用mymap将每个值平方
+//    var myarr = array.mymap(function (value,index,array) {
+//        return value*value
+//    })
+//    console.log(myarr)
 
+//  调用myindexOf找跟30相同的数组下标
+    console.log(array.myindexOf(30,"0"))
 </script>
 </body>
 </html>
