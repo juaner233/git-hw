@@ -8,4 +8,12 @@ Array.prototype.myForEach = function (callback, thisArg) {
         //抛出一个类型错误TypeError
         throw new TypeError(callback + 'is not a function')
     }
+    for (var i = 0; i < this.length; i++) {
+        //判断this第i位是否有效 返回true/false false则输出那位显示empty
+        if (Object.prototype.hasOwnProperty.call(this, i)){
+            callback(this[i], i, this)
+        }
+    }
 }
+
+
