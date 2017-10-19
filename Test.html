@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <script type="application/javascript" src="myforeach.js"></script>
+    <!--<script type="application/javascript" src="myforeach.js"></script>-->
+    <script type="application/javascript" src="mymap.js"></script>
 </head>
 <body>
 <script>
@@ -12,12 +13,15 @@
     var arr = 0
 
     //调用 array中的值求和
-    array.myForEach(function(value,index,array){
-        arr += value
+//    array.myForEach(function(value,index,array){
+//        arr += value
+//    })
+//    console.log(arr)
+
+    var myarr = array.mymap(function (value,index,array) {
+        return value*value
     })
-    console.log(arr)
-
-
+    console.log(myarr)
 
 </script>
 </body>
